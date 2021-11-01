@@ -1,0 +1,12 @@
+def func1():
+    try:
+        global a
+        a = int(input("Enter a number:"))
+        
+    except ValueError:
+        print("enter a valid num: ")
+        func1()
+    return a
+
+b = func1()
+print(b)
